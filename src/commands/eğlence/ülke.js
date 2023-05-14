@@ -47,28 +47,6 @@ module.exports = {
         if(countryData == null) return interaction.editReply({
             embeds: [embed.setDescription("❌ | Ülke Bulunamadı!")]
         });
-//         embed.setAuthor({
-//             name: `${countryData.translations.tur.official || countryData.name.official}`,
-//             iconURL: `${countryData.flags.png}`
-//         });
-//         embed.setThumbnail(`${countryData.flags.png}`)
-//         embed.setDescription(`
-// > Ana Dil: \`${Object.values(countryData.languages).join("`, `")}\`
-// > CCA2: \`${countryData.cca2}\`
-// > CCN3: \`${countryData.ccn3}\`
-// > CCA3: \`${countryData.cca3}\`
-// > CIOC: \`${countryData.cioc}\`
-// > Bağımsız Ülke: \`${countryData.independent ? 'Evet' : 'Hayır'}\`
-// > Para Birimi \`${Object.values(countryData.currencies).map(currency => currency.name + '(' + currency.symbol + ')').join("`, `")}\`
-// > Başkent: \`${countryData.capital.join("`, `")}\`
-// > Google Maps: [URL](${countryData.maps.googleMaps})
-// > Open Street Maps: [URL](${countryData.maps.openStreetMaps})
-// > Zaman Dilimleri: \`${countryData.timezones.join("`, `")}\`
-// > Nüfus: \`${countryData.population}\`
-//         `)
-//         interaction.editReply({
-//             embeds: [embed]
-//         })
 
         const canvas = createCanvas(600, 300);
         const ctx = canvas.getContext("2d");
